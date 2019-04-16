@@ -1,8 +1,18 @@
 .contenedor {
-    border: 3px solid red;
     position: relative;
     width: 450px;
     margin: 0px auto;
+}
+
+.pantalla_inicial {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 1;
 }
 
 .menu_rueda {
@@ -14,7 +24,6 @@
 
 img.rueda {
     max-width: 450px;
-    outline: 3px solid green;
 }
 
 img.icono_curso {
@@ -85,10 +94,61 @@ img.icono_curso {
     display: none;
 }
 
+.icono_enlace {
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    top: 5px;
+    position: relative;
+}
+
+.contenedor_enlaces {
+    width: 100%;
+    position: relative;
+    height: 75px;
+    z-index: 1;
+}
+
+.color_icono_enlace {
+    color: white;
+}
+
+.background_enlace {
+    background-color: #ffd800;
+    border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    margin: 0px 15px;
+    position: relative;
+    top: 15px;
+    -webkit-transition: top .5s;
+    transition: top .5s;
+    cursor: pointer;
+}
+
+.background_enlace:hover {
+    top: 5px;
+}
+
+.rotated-image {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.enlace_anchor {
+    text-decoration: none;
+}
+
+.change_courses {
+    animation: shake 0.3s;
+    animation-iteration-count: 1.0s;
+}
+
 .icono_curso:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 2.0s;
-    /* When the animation is finished, start again */
     animation-iteration-count: infinite;
 }
 
