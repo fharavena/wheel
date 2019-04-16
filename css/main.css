@@ -152,6 +152,12 @@ img.icono_curso {
     animation-iteration-count: infinite;
 }
 
+.icono_curso_mover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1.0s;
+}
+
+
 @keyframes shake {
     0% {
         transform: translate(1px, 1px) rotate(0deg);
