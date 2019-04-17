@@ -1,3 +1,14 @@
+function cambiar_menu_curso_seleccionado(clicked_id, lista) {
+    // console.log(clicked_id);
+
+    for (var i = 0; i < lista.length; i++) {
+        //lista[i].classList.add('icono_curso_mover');
+        lista[i].classList.remove('icono_enlace_seleccionado');
+    }
+
+    document.getElementById(clicked_id).classList.add("icono_enlace_seleccionado");
+}
+
 function unlock_wheel(clicked_id) {
     document.getElementById("pantalla_inicial").style.display = "none";
 
@@ -32,15 +43,19 @@ function unlock_wheel(clicked_id) {
     // enviar hacia afuera
     if (clicked_id === "1_btn") {
         //cursos de primero medio
-        console.log("1");
-        document.getElementById("1_btn").style.backgroundColor = "black";
-        document.getElementById("1_btn").style.top = "5px";
-        document.getElementById("2_btn").style.backgroundColor = "#ffd800";
-        document.getElementById("2_btn").style.top = "15px";
-        document.getElementById("3_btn").style.backgroundColor = "#ffd800";
-        document.getElementById("3_btn").style.top = "15px";
-        document.getElementById("4_btn").style.backgroundColor = "#ffd800";
-        document.getElementById("4_btn").style.top = "15px";
+        //console.log("1");
+        
+        var elementos_de_menu = document.querySelectorAll('.background_enlace');
+        cambiar_menu_curso_seleccionado (clicked_id,elementos_de_menu);
+
+        // document.getElementById("1_btn").style.backgroundColor = "black";
+        // document.getElementById("1_btn").style.top = "5px";
+        // document.getElementById("2_btn").style.backgroundColor = "#ffd800";
+        // document.getElementById("2_btn").style.top = "15px";
+        // document.getElementById("3_btn").style.backgroundColor = "#ffd800";
+        // document.getElementById("3_btn").style.top = "15px";
+        // document.getElementById("4_btn").style.backgroundColor = "#ffd800";
+        // document.getElementById("4_btn").style.top = "15px";
 
 
 
@@ -62,17 +77,19 @@ function unlock_wheel(clicked_id) {
         //fin deshabilitacion ingles
 
     } else if (clicked_id === "2_btn") {
-        console.log("2");
+        // console.log("2");
 
-        document.getElementById("1_btn").style.backgroundColor = "#ffd800";
-        document.getElementById("1_btn").style.top = "15px";
-        document.getElementById("2_btn").style.backgroundColor = "black";
-        document.getElementById("2_btn").style.top = "5px";
-        document.getElementById("3_btn").style.backgroundColor = "#ffd800";
-        document.getElementById("3_btn").style.top = "15px";
-        document.getElementById("4_btn").style.backgroundColor = "#ffd800";
-        document.getElementById("4_btn").style.top = "15px";
+        // document.getElementById("1_btn").style.backgroundColor = "#ffd800";
+        // document.getElementById("1_btn").style.top = "15px";
+        // document.getElementById("2_btn").style.backgroundColor = "black";
+        // document.getElementById("2_btn").style.top = "5px";
+        // document.getElementById("3_btn").style.backgroundColor = "#ffd800";
+        // document.getElementById("3_btn").style.top = "15px";
+        // document.getElementById("4_btn").style.backgroundColor = "#ffd800";
+        // document.getElementById("4_btn").style.top = "15px";
 
+        var elementos_de_menu = document.querySelectorAll('.background_enlace');
+        cambiar_menu_curso_seleccionado (clicked_id,elementos_de_menu);
 
 
 
@@ -94,7 +111,10 @@ function unlock_wheel(clicked_id) {
         document.getElementById("curso_08").href = "#orientacion2";
         document.getElementById("curso_10").href = "#quimica2";
     } else if (clicked_id === "3_btn") {
-        console.log("3");
+        // console.log("3");
+
+        var elementos_de_menu = document.querySelectorAll('.background_enlace');
+        cambiar_menu_curso_seleccionado (clicked_id,elementos_de_menu);
         document.getElementById("curso_00").href = "#biologia3";
         document.getElementById("curso_01").href = "#evaluaciones3";
         document.getElementById("curso_02").href = "#fisica3";
@@ -111,7 +131,9 @@ function unlock_wheel(clicked_id) {
         document.getElementById("curso_08").href = "#orientacion3";
         document.getElementById("curso_10").href = "#quimica3";
     } else if (clicked_id === "4_btn") {
-        console.log("4");
+        // console.log("4");
+        var elementos_de_menu = document.querySelectorAll('.background_enlace');
+        cambiar_menu_curso_seleccionado (clicked_id,elementos_de_menu);
         document.getElementById("curso_00").href = "#biologia4";
         document.getElementById("curso_01").href = "#evaluaciones4";
         document.getElementById("curso_02").href = "#fisica4";

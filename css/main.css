@@ -13,6 +13,7 @@
     height: 100%;
     opacity: 0.8;
     z-index: 1;
+    position: fixed;
 }
 
 .menu_rueda {
@@ -138,6 +139,18 @@ img.icono_curso {
 .icono_enlace_seleccionado{
     background-color: black;
     top: 0px;
+}
+
+.estilo_I_de_la_O{
+    background-color: #ffd800;
+    width: 250px;
+    height: 55px;
+    border-radius: 50px;
+    position: relative;
+    top: 254px;
+    left: -60px;
+
+    color:white;
 }
 
 .rotated-image {
