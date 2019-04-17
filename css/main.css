@@ -121,7 +121,9 @@ img.icono_curso {
     border-radius: 50%;
     display: inline-block;
     width: 40px;
-    margin: 0px 15px;
+    /* solo cuando se agregue otro icono */
+    /* margin: 0px 15px; */
+    margin: 0px 23px;
     position: relative;
     top: 15px;
     -webkit-transition: top .5s;
@@ -131,6 +133,11 @@ img.icono_curso {
 
 .background_enlace:hover {
     top: 5px;
+}
+
+.icono_enlace_seleccionado{
+    background-color: black;
+    top: 0px;
 }
 
 .rotated-image {

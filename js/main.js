@@ -30,12 +30,22 @@ function unlock_wheel(clicked_id) {
     }
 
     // enviar hacia afuera
-    if (clicked_id === "0_btn") {
-        console.log("0");
-
-    } else if (clicked_id === "1_btn") {
+    if (clicked_id === "1_btn") {
         //cursos de primero medio
         console.log("1");
+        document.getElementById("1_btn").style.backgroundColor = "black";
+        document.getElementById("1_btn").style.top = "5px";
+        document.getElementById("2_btn").style.backgroundColor = "#ffd800";
+        document.getElementById("2_btn").style.top = "15px";
+        document.getElementById("3_btn").style.backgroundColor = "#ffd800";
+        document.getElementById("3_btn").style.top = "15px";
+        document.getElementById("4_btn").style.backgroundColor = "#ffd800";
+        document.getElementById("4_btn").style.top = "15px";
+
+
+
+
+
         document.getElementById("curso_00").href = "#biologia1";
         document.getElementById("curso_01").href = "#evaluaciones1";
         document.getElementById("curso_02").href = "#fisica1";
@@ -53,6 +63,19 @@ function unlock_wheel(clicked_id) {
 
     } else if (clicked_id === "2_btn") {
         console.log("2");
+
+        document.getElementById("1_btn").style.backgroundColor = "#ffd800";
+        document.getElementById("1_btn").style.top = "15px";
+        document.getElementById("2_btn").style.backgroundColor = "black";
+        document.getElementById("2_btn").style.top = "5px";
+        document.getElementById("3_btn").style.backgroundColor = "#ffd800";
+        document.getElementById("3_btn").style.top = "15px";
+        document.getElementById("4_btn").style.backgroundColor = "#ffd800";
+        document.getElementById("4_btn").style.top = "15px";
+
+
+
+
         document.getElementById("curso_00").href = "#biologia2";
         document.getElementById("curso_01").href = "#evaluaciones2";
         document.getElementById("curso_02").href = "#fisica2";
@@ -102,6 +125,7 @@ function unlock_wheel(clicked_id) {
         document.getElementById("curso_05").style.cursor = "pointer";
     } else if (clicked_id === "5_btn") {
         console.log("5");
-    }   
+
+    }
 
 }
