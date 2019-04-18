@@ -9,6 +9,17 @@
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script>
+        window.onload = function () {
+            if (/my/.test(window.location.href)) {
+                var appBanners = document.getElementById('page-header');
+                appBanners.style.display = 'none'
+            }
+        }
+    </script>
+
+
 </head>
 
 <body style="background-color: white">
@@ -16,11 +27,7 @@
     <div class="contenedor">
 
         <div class="contenedor_enlaces">
-            <span id="0_btn" class="background_enlace">
-                <div class="icono_enlace "><a href="http://liceovirtual.utalca.cl"><i
-                            class="fas fa-home color_icono_enlace " style="font-size: smaller; "></a></i>
-                </div>
-            </span>
+
             <span id="1_btn" class="background_enlace " onclick="unlock_wheel(this.id) ">
                 <div class="icono_enlace ">1º</div>
             </span>
@@ -35,40 +42,40 @@
             </span>
 
         </div>
+        <div class="contenido_imagen" style="position: relative">
 
-        <a href="../user/profile.php" id="enlace_perfil">
-        <div class="estilo_I_de_la_O"><i class="fa fa-user" style="margin: 17px 20px;font-size: 20px;width: 210px;">&nbsp;&nbsp;
-            Cambiar por rol</i></div>
-        </a>
+            <img id="rueda_imagen" class="rueda " src="img/rueda.jpg ">
+            <a id="curso_00" href="#">
+                <img class="icono_curso icono_biologia " src="img/biologia.png ">
+            </a>
+            <a id="curso_01" href="#">
+                <img id="img_curso_01" class="icono_curso icono_evaluaciones " src="img/evaluaciones.png ">
+            </a>
+            <a id="curso_02" href="#">
+                <img class="icono_curso icono_fisica " src="img/fisica.png "></a>
+            <a id="curso_03" href="#">
+                <img class="icono_curso icono_formacion " src="img/formacion.png "></a>
+            <a id="curso_04" href="#">
+                <img class="icono_curso icono_historia " src="img/historia.png "></a>
+            <a id="curso_05" href="#">
+                <img id="img_curso_01" class="icono_curso icono_ingles " src="img/ingles.png "></a>
+            <a id="curso_06" href="#">
+                <img class="icono_curso icono_lenguaje " src="img/lenguaje.png "></a>
+            <a id="curso_07" href="#">
+                <img class="icono_curso icono_matematicas " src="img/matematicas.png "></a>
+            <a id="curso_08" href="#">
+                <img class="icono_curso icono_orientacion " src="img/orientacion.png "></a>
+            <a id="curso_09" href="#">
+                <img class="icono_curso icono_Plus " src="img/Plus.png "></a>
+            <a id="curso_10" href="#">
+                <img class="icono_curso icono_quimica " src="img/quimica.png "></a>
+            <a id="curso_11" href="#">
+                <img class="icono_curso icono_cerrar_icono " src="img/cerrar_icono.png "></a>
+                <div class="estilo_I_de_la_O"><i class="fa fa-user"
+                    style="margin: 17px 20px;font-size: 20px;width: 210px;">&nbsp;&nbsp;
+                    Cambiar por rol</i></div>
 
-        <img id="rueda_imagen" class="rueda " src="img/rueda.jpg ">
-        <a id="curso_00" href="#">
-            <img class="icono_curso icono_biologia " src="img/biologia.png ">
-        </a>
-        <a id="curso_01" href="#">
-            <img id="img_curso_01" class="icono_curso icono_evaluaciones " src="img/evaluaciones.png ">
-        </a>
-        <a id="curso_02" href="#">
-            <img class="icono_curso icono_fisica " src="img/fisica.png "></a>
-        <a id="curso_03" href="#">
-            <img class="icono_curso icono_formacion " src="img/formacion.png "></a>
-        <a id="curso_04" href="#">
-            <img class="icono_curso icono_historia " src="img/historia.png "></a>
-        <a id="curso_05" href="#">
-            <img id="img_curso_01" class="icono_curso icono_ingles " src="img/ingles.png "></a>
-        <a id="curso_06" href="#">
-            <img class="icono_curso icono_lenguaje " src="img/lenguaje.png "></a>
-        <a id="curso_07" href="#">
-            <img class="icono_curso icono_matematicas " src="img/matematicas.png "></a>
-        <a id="curso_08" href="#">
-            <img class="icono_curso icono_orientacion " src="img/orientacion.png "></a>
-        <a id="curso_09" href="#">
-            <img class="icono_curso icono_Plus " src="img/Plus.png "></a>
-        <a id="curso_10" href="#">
-            <img class="icono_curso icono_quimica " src="img/quimica.png "></a>
-        <a id="curso_11" href="#">
-            <img class="icono_curso icono_cerrar_icono " src="img/cerrar_icono.png "></a>
-
+        </div>
     </div>
 
 </body>

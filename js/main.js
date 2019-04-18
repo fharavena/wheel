@@ -15,7 +15,7 @@ function unlock_wheel(clicked_id) {
     
     //modificar si quiere mover al cambio de curso los iconos y/o rueda
     var icono_movimiento = true;
-    var rueda_movimiento = false;
+    var rueda_movimiento = true;
 
 
     if(rueda_movimiento){
@@ -48,19 +48,6 @@ function unlock_wheel(clicked_id) {
         var elementos_de_menu = document.querySelectorAll('.background_enlace');
         cambiar_menu_curso_seleccionado (clicked_id,elementos_de_menu);
 
-        // document.getElementById("1_btn").style.backgroundColor = "black";
-        // document.getElementById("1_btn").style.top = "5px";
-        // document.getElementById("2_btn").style.backgroundColor = "#ffd800";
-        // document.getElementById("2_btn").style.top = "15px";
-        // document.getElementById("3_btn").style.backgroundColor = "#ffd800";
-        // document.getElementById("3_btn").style.top = "15px";
-        // document.getElementById("4_btn").style.backgroundColor = "#ffd800";
-        // document.getElementById("4_btn").style.top = "15px";
-
-
-
-
-
         document.getElementById("curso_00").href = "#biologia1";
         document.getElementById("curso_01").href = "#evaluaciones1";
         document.getElementById("curso_02").href = "#fisica1";
@@ -77,16 +64,7 @@ function unlock_wheel(clicked_id) {
         //fin deshabilitacion ingles
 
     } else if (clicked_id === "2_btn") {
-        // console.log("2");
 
-        // document.getElementById("1_btn").style.backgroundColor = "#ffd800";
-        // document.getElementById("1_btn").style.top = "15px";
-        // document.getElementById("2_btn").style.backgroundColor = "black";
-        // document.getElementById("2_btn").style.top = "5px";
-        // document.getElementById("3_btn").style.backgroundColor = "#ffd800";
-        // document.getElementById("3_btn").style.top = "15px";
-        // document.getElementById("4_btn").style.backgroundColor = "#ffd800";
-        // document.getElementById("4_btn").style.top = "15px";
 
         var elementos_de_menu = document.querySelectorAll('.background_enlace');
         cambiar_menu_curso_seleccionado (clicked_id,elementos_de_menu);
