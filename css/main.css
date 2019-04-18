@@ -98,11 +98,11 @@ img.icono_curso {
 .icono_enlace {
     color: white;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 40px;
     width: 40px;
     height: 40px;
-    text-align: center;
-    top: 5px;
+    left: 10px;
+    top: 0px;
     position: relative;
 }
 
@@ -118,13 +118,12 @@ img.icono_curso {
 }
 
 .background_enlace {
-    background-color: #ffd800;
+    background-color: #ffc820;
     border-radius: 50%;
     display: inline-block;
-    width: 40px;
-    /* solo cuando se agregue otro icono */
-    /* margin: 0px 15px; */
-    margin: 0px 32px;
+    width: 50px;
+    height: 50px;
+    margin: 0px 29px;
     position: relative;
     top: 15px;
     -webkit-transition: top .5s;
@@ -142,7 +141,7 @@ img.icono_curso {
 }
 
 .estilo_I_de_la_O{
-    background-color: #ffd800;
+    background-color: #ffc820;
     width: 250px;
     height: 55px;
     border-radius: 50px;
@@ -214,3 +213,25 @@ img.icono_curso {
         transform: translate(1px, -2px) rotate(-1deg);
     }
 }
+
+body{
+    background-color: white
+}
+
+@media only screen and (max-width: 575px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    body {
+      background-color: red;
+    }
+
+    .iframe_rueda_para_adaptar{
+        -ms-zoom: 0.75;
+        -moz-transform: scale(0.75);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.75);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.45);
+        -webkit-transform-origin: 0 0;
+    }
+  }
