@@ -217,21 +217,3 @@ img.icono_curso {
 body{
     background-color: white
 }
-
-@media only screen and (max-width: 575px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-    body {
-      background-color: red;
-    }
-
-    .iframe_rueda_para_adaptar{
-        -ms-zoom: 0.75;
-        -moz-transform: scale(0.75);
-        -moz-transform-origin: 0 0;
-        -o-transform: scale(0.75);
-        -o-transform-origin: 0 0;
-        -webkit-transform: scale(0.45);
-        -webkit-transform-origin: 0 0;
-    }
-  }
