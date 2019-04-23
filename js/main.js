@@ -80,7 +80,7 @@ function unlock_wheel(clicked_id) {
         //inicio deshabilitacion ingles
 
         document.getElementById("curso_05").style.cursor = "no-drop";
-        document.getElementById("curso_05").href = "#";
+        document.getElementById("curso_05").removeAttribute('href');
 
         //fin deshabilitacion ingles
 
@@ -101,7 +101,7 @@ function unlock_wheel(clicked_id) {
         //inicio deshabilitacion ingles
 
         document.getElementById("curso_05").style.cursor = "no-drop";
-        document.getElementById("curso_05").href = "#";
+        document.getElementById("curso_05").removeAttribute('href');
 
         //fin deshabilitacion ingles
         document.getElementById("curso_06").href = "#lenguaje3";
